@@ -8,16 +8,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
+import { AdminComponent } from './admin/admin.component';
+import { AdminModule } from './admin/admin.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    AdminModule,
     AppRoutingModule
   ],
   providers: [],

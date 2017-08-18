@@ -13,4 +13,16 @@
   <a routerLink="/home" routerLinkActive="active">Heroes1</a>
   <a routerLink="/about" routerLinkActive="active">Heroes2</a>
 </nav>
+
+<header>
+  <h1>Storyline Tracker</h1>
+  <h3>Hierarchical Router Demo</h3>
+  <nav>
+    <ul>
+      <li><a href="#" [routerLink]="['/admin']">User</a></li>
+      <li><a href="#" [routerLink]="['/admin/email']">Email</a></li>
+    </ul>
+  </nav>
+</header>
+
 <router-outlet></router-outlet>
